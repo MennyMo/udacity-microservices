@@ -23,8 +23,9 @@ def home():
     html = f"<h3>Sklearn Prediction Home</h3>"
     return html.format(format)
 
-@app.route("/predict", methods=['POST'])
+@app.route("/predict", methods=['GET', 'POST'])
 def predict():
+    clf = joblib.load("./model_data/boston_housing_prediction.joblib")
     """Performs an sklearn prediction
         
         input looks like:
@@ -67,5 +68,4 @@ def predict():
 
 if __name__ == "__main__":
     # load pretrained model as clf
-    clf = joblib.load("./model_data/boston_housing_prediction.joblib")
     app.run(host='0.0.0.0', port=80, debug=True) # specify port=80
