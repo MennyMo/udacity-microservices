@@ -8,8 +8,6 @@ import pandas as pd
 from sklearn.externals import joblib
 from sklearn.preprocessing import StandardScaler
 
-from forms import PredictionForm
-
 app = Flask(__name__)
 app.config['SECRET_KEY'] = '03a78cc91ff590cd25450b394a5a9633'
 LOG = create_logger(app)

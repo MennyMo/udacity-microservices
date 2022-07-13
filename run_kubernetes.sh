@@ -17,4 +17,4 @@ kubectl get pods
 
 # Step 4:
 # Forward the container port to a host
-kubectl port-forward everybody8/flask_pro:v1.0 8000:80
+kubectl port-forward flask 8000:80
