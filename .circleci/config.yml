@@ -22,3 +22,8 @@ jobs:
           name: Run lint
           command: |
             make lint
+
+workflows:
+  default:
+    jobs:
+      - build
