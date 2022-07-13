@@ -25,6 +25,7 @@ jobs:
       - run:
           name: Run lint
           command: |
+            cd /bin/hadolint
             make lint
 
 workflows:
