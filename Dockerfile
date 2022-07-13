@@ -11,7 +11,7 @@ COPY . /app
 ## Step 3:
 # Install packages from requirements.txt
 # hadolint --ignore=DL3013
-RUN hadolint --ignore=DL3013 Dockerfile
+# RUN hadolint --ignore=DL3013 Dockerfile
 RUN pip install --upgrade pip && pip install --requirement requirements.txt
 
 ## Step 4:
