@@ -10,10 +10,11 @@ jobs:
     working_directory: ~/repo
     steps:
       - checkout
-      # - run:
-      #     name: Setup
-      #     command: |
-      #       make setup
+      - run:
+          name: Activate Environement
+          command: |
+            python3 -m venv ~/.venv
+            source ~/.venv/bin/activate
       - run:
           name: Install Hadolint
           command: |
