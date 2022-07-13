@@ -10,8 +10,8 @@ COPY . /app
 
 ## Step 3:
 # Install packages from requirements.txt
+#RUN hadolint --ignore=DL3013
 RUN pip install --upgrade pip && pip install --requirement requirements.txt
-# RUN hadolint ignore=DL3013
 
 ## Step 4:
 # Expose port 80
