@@ -4,7 +4,7 @@
 
 # Step 1:
 # Build image and add a descriptive tag
-docker build -t everybody8/flask_pro:v1.0 .
+docker build -t microservices/flask_pro:v1.0 .
 
 # Step 2: 
 # List docker images
@@ -12,4 +12,4 @@ docker image ls
 
 # Step 3: 
 # Run flask app
-docker run -p 8000:80 everybody8/flask_pro:v1.0
+docker run -p 8000:80 microservices/flask_pro:v1.0
