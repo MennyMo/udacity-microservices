@@ -6,7 +6,7 @@
 # Step 1:
 # Create dockerpath
 # dockerpath=<your docker ID/path>
-dockerpath=everybody8/flask_pro:v1.0
+dockerpath=mollyladson/flask_pro:v1.0
 
 # Step 2:  
 # Authenticate & tag
